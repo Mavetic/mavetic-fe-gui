@@ -1,3 +1,4 @@
+"use client";
 import themeBuilder from "@/theme/themeBuilder";
 import { AppRouterCacheProvider } from "@mui/material-nextjs/v15-appRouter";
 import CssBaseline from "@mui/material/CssBaseline";
