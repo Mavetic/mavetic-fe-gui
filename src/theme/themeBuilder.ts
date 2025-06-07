@@ -7,7 +7,7 @@ const defaultFontProps = {
   display: "swap",
 };
 
-const theme = (customTheme: Theme) =>
+const themeBuilder = (customTheme: Theme) =>
   createTheme(customTheme, {
     palette: {
       mode: "light",
@@ -22,4 +22,4 @@ const theme = (customTheme: Theme) =>
 
 export { defaultFontProps };
 
-export default theme;
+export default themeBuilder;
