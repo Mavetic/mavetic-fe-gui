@@ -1,5 +1,5 @@
 {
-  "name": "mavetic-fe-gui",
+  "name": "@mavetic/mavetic-fe-gui",
   "version": "0.0.1",
   "packageManager": "pnpm@10.11.0",
   "description": "FE base GUI library",
