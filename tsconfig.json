@@ -1,12 +1,6 @@
 {
   "extends": "@mavetic/mavetic-fe-core/tsconfig",
   "compilerOptions": {
-    "incremental": true,
-    "plugins": [
-      {
-        "name": "next"
-      }
-    ],
     "paths": {
       "@/*": ["./src/*"]
     }

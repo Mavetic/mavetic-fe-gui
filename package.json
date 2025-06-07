@@ -2,9 +2,12 @@
   "name": "@mavetic/mavetic-fe-gui",
   "version": "0.0.1",
   "packageManager": "pnpm@10.11.0",
+  "main": "dist/index.js",
+  "module": "dist/index.mjs",
+  "types": "dist/index.d.ts",
   "description": "FE base GUI library",
   "scripts": {
-    "build": "tsc",
+    "build": "tsup src/index.ts --format esm,cjs --dts --clean",
     "lint": "biome check --write",
     "prepare": "husky"
   },
@@ -25,6 +28,7 @@
     "@types/react-dom": "^19.1.2",
     "husky": "^9.1.7",
     "lint-staged": "^16.1.0",
+    "tsup": "^8.5.0",
     "typescript": "^5.8.3",
     "vitest": "^3.1.2"
   },
