@@ -1,17 +1,17 @@
-"use client";
 import themeBuilder from "@/theme/themeBuilder";
 import { AppRouterCacheProvider } from "@mui/material-nextjs/v15-appRouter";
 import CssBaseline from "@mui/material/CssBaseline";
 import InitColorSchemeScript from "@mui/material/InitColorSchemeScript";
-import { type Theme, ThemeProvider } from "@mui/material/styles";
-import type * as React from "react";
+import { ThemeProvider, type createTheme } from "@mui/material/styles";
+// biome-ignore lint/style/useImportType: React need to render component
+import * as React from "react";
 
 const GuiProvider = ({
   children,
   theme,
 }: {
   children: React.ReactNode;
-  theme: Theme;
+  theme: Parameters<typeof createTheme>[0];
 }) => {
   return (
     <>
