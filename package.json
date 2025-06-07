@@ -1,0 +1,34 @@
+{
+  "name": "mavetic-fe-gui",
+  "version": "0.0.1",
+  "packageManager": "pnpm@10.11.0",
+  "description": "FE base GUI library",
+  "scripts": {
+    "build": "tsc",
+    "lint": "biome check --write",
+    "prepare": "husky"
+  },
+  "dependencies": {
+    "@emotion/cache": "^11.14.0",
+    "@emotion/react": "^11.14.0",
+    "@emotion/styled": "^11.14.0",
+    "@mavetic/mavetic-fe-core": "0.0.6",
+    "@mui/icons-material": "^7.0.2",
+    "@mui/material": "^7.0.2",
+    "@mui/material-nextjs": "^7.0.2",
+    "@next/font": "^14.2.15"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "1.9.4",
+    "@types/node": "^22.15.30",
+    "@types/react": "^19.1.2",
+    "@types/react-dom": "^19.1.2",
+    "husky": "^9.1.7",
+    "lint-staged": "^16.1.0",
+    "typescript": "^5.8.3",
+    "vitest": "^3.1.2"
+  },
+  "lint-staged": {
+    "*.{js,jsx,ts,tsx,json}": ["biome check --write"]
+  }
+}
