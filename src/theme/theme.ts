@@ -1,22 +1,14 @@
 "use client";
-import { createTheme } from "@mui/material/styles";
-import type { NextFontWithVariable } from "@next/font";
+import { type Theme, createTheme } from "@mui/material/styles";
 
-const setUpFont = (
-  font: (options: object) => NextFontWithVariable,
-): NextFontWithVariable =>
-  font({
-    weight: ["300", "400", "500", "700"],
-    subsets: ["latin"],
-    display: "swap",
-  });
+const defaultFontProps = {
+  weight: ["300", "400", "500", "700"],
+  subsets: ["latin"],
+  display: "swap",
+};
 
-// Create a theme instance
-const theme = ({ font }: { font: (options: object) => NextFontWithVariable }) =>
-  createTheme({
-    typography: {
-      fontFamily: setUpFont(font).style.fontFamily,
-    },
+const theme = (customTheme: Theme) =>
+  createTheme(customTheme, {
     palette: {
       mode: "light",
       primary: {
@@ -27,5 +19,7 @@ const theme = ({ font }: { font: (options: object) => NextFontWithVariable }) =>
       },
     },
   });
+
+export { defaultFontProps };
 
 export default theme;
