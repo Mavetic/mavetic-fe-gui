@@ -11,16 +11,16 @@
     "lint": "biome check --write",
     "prepare": "husky"
   },
-  "dependencies": {
-    "@mavetic/mavetic-fe-core": "0.0.6"
-  },
   "peerDependencies": {
     "@emotion/cache": "^11.14.0",
     "@emotion/react": "^11.14.0",
     "@emotion/styled": "^11.14.0",
+    "@mavetic/mavetic-fe-core": "0.0.7",
     "@mui/icons-material": "^7.0.2",
     "@mui/material": "^7.0.2",
-    "@mui/material-nextjs": "^7.0.2"
+    "@mui/material-nextjs": "^7.0.2",
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0"
   },
   "devDependencies": {
     "@biomejs/biome": "1.9.4",

@@ -18,8 +18,8 @@ importers:
         specifier: ^11.14.0
         version: 11.14.0(@emotion/react@11.14.0(@types/react@19.1.6)(react@19.1.0))(@types/react@19.1.6)(react@19.1.0)
       '@mavetic/mavetic-fe-core':
-        specifier: 0.0.6
-        version: 0.0.6(@biomejs/biome@1.9.4)(@types/node@22.15.30)(@types/react-dom@19.1.6(@types/react@19.1.6))(@types/react@19.1.6)(next@15.3.1(react-dom@19.1.0(react@19.1.0))(react@19.1.0))(typescript@5.8.3)(vitest@3.2.2(@types/node@22.15.30)(yaml@2.8.0))
+        specifier: 0.0.7
+        version: 0.0.7(@biomejs/biome@1.9.4)(@types/node@22.15.30)(@types/react-dom@19.1.6(@types/react@19.1.6))(@types/react@19.1.6)(next@15.3.1(react-dom@19.1.0(react@19.1.0))(react@19.1.0))(react-dom@19.1.0(react@19.1.0))(react@19.1.0)(typescript@5.8.3)(vitest@3.2.2(@types/node@22.15.30)(yaml@2.8.0))
       '@mui/icons-material':
         specifier: ^7.0.2
         version: 7.1.1(@mui/material@7.1.1(@emotion/react@11.14.0(@types/react@19.1.6)(react@19.1.0))(@emotion/styled@11.14.0(@emotion/react@11.14.0(@types/react@19.1.6)(react@19.1.0))(@types/react@19.1.6)(react@19.1.0))(@types/react@19.1.6)(react-dom@19.1.0(react@19.1.0))(react@19.1.0))(@types/react@19.1.6)(react@19.1.0)
@@ -29,6 +29,12 @@ importers:
       '@mui/material-nextjs':
         specifier: ^7.0.2
         version: 7.1.1(@emotion/cache@11.14.0)(@emotion/react@11.14.0(@types/react@19.1.6)(react@19.1.0))(@types/react@19.1.6)(next@15.3.1(react-dom@19.1.0(react@19.1.0))(react@19.1.0))(react@19.1.0)
+      react:
+        specifier: ^19.1.0
+        version: 19.1.0
+      react-dom:
+        specifier: ^19.1.0
+        version: 19.1.0(react@19.1.0)
     devDependencies:
       '@biomejs/biome':
         specifier: 1.9.4
@@ -499,14 +505,16 @@ packages:
   '@jridgewell/trace-mapping@0.3.25':
     resolution: {integrity: sha512-vNk6aEwybGtawWmy/PzwnGDOjCkLWSD2wqvjGGAgOAwCGWySYXfYoxt00IJkTF+8Lb57DwOb3Aa0o9CApepiYQ==}
 
-  '@mavetic/mavetic-fe-core@0.0.6':
-    resolution: {integrity: sha512-8cNZSpnHZkwxITfQzYeNpivUQn4bw+t/5v/+UsphCzBXIRbBkjW/AKuhm3a78LpKubZyspLOj0uHfbshExmsmA==, tarball: https://npm.pkg.github.com/download/@mavetic/mavetic-fe-core/0.0.6/130c1ce827b5e53b67e8e911bcd14fa441795f41}
+  '@mavetic/mavetic-fe-core@0.0.7':
+    resolution: {integrity: sha512-ofRAxVQTHqcaJMrWs17SzmFD/ap0y7I3VrTtlgmXsarQDdkTZ8jNKBYl58DjdlHZOffOEAXykKbsAhOTFL75eQ==, tarball: https://npm.pkg.github.com/download/@mavetic/mavetic-fe-core/0.0.7/75168ef046c5be818edabb6352e31a382af76268}
     peerDependencies:
       '@biomejs/biome': 1.9.4
       '@types/node': ^22.15.30
       '@types/react': ^19.1.2
       '@types/react-dom': ^19.1.2
       next: 15.3.1
+      react: ^19.1.0
+      react-dom: ^19.1.0
       typescript: ^5.8.3
       vitest: ^3.1.2
 
@@ -2054,7 +2062,7 @@ snapshots:
       '@jridgewell/resolve-uri': 3.1.2
       '@jridgewell/sourcemap-codec': 1.5.0
 
-  '@mavetic/mavetic-fe-core@0.0.6(@biomejs/biome@1.9.4)(@types/node@22.15.30)(@types/react-dom@19.1.6(@types/react@19.1.6))(@types/react@19.1.6)(next@15.3.1(react-dom@19.1.0(react@19.1.0))(react@19.1.0))(typescript@5.8.3)(vitest@3.2.2(@types/node@22.15.30)(yaml@2.8.0))':
+  '@mavetic/mavetic-fe-core@0.0.7(@biomejs/biome@1.9.4)(@types/node@22.15.30)(@types/react-dom@19.1.6(@types/react@19.1.6))(@types/react@19.1.6)(next@15.3.1(react-dom@19.1.0(react@19.1.0))(react@19.1.0))(react-dom@19.1.0(react@19.1.0))(react@19.1.0)(typescript@5.8.3)(vitest@3.2.2(@types/node@22.15.30)(yaml@2.8.0))':
     dependencies:
       '@biomejs/biome': 1.9.4
       '@types/node': 22.15.30
