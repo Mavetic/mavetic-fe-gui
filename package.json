@@ -30,5 +30,8 @@
   },
   "lint-staged": {
     "*.{js,jsx,ts,tsx,json}": ["biome check --write"]
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com"
   }
 }
