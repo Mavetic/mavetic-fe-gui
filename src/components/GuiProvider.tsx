@@ -3,7 +3,7 @@ import { AppRouterCacheProvider } from "@mui/material-nextjs/v15-appRouter";
 import CssBaseline from "@mui/material/CssBaseline";
 import InitColorSchemeScript from "@mui/material/InitColorSchemeScript";
 import { ThemeProvider, type createTheme } from "@mui/material/styles";
-// biome-ignore lint/style/useImportType: React need to render component
+// biome-ignore lint/style/useImportType: React needed to render component
 import * as React from "react";
 
 const GuiProvider = ({
@@ -11,7 +11,7 @@ const GuiProvider = ({
   theme,
 }: {
   children: React.ReactNode;
-  theme: Parameters<typeof createTheme>[0];
+  theme?: Parameters<typeof createTheme>[0];
 }) => {
   return (
     <>
