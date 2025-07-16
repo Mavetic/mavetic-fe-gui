@@ -1,10 +1,10 @@
-import themeBuilder from "@/theme/themeBuilder";
-import { AppRouterCacheProvider } from "@mui/material-nextjs/v15-appRouter";
 import CssBaseline from "@mui/material/CssBaseline";
 import InitColorSchemeScript from "@mui/material/InitColorSchemeScript";
-import { ThemeProvider, type createTheme } from "@mui/material/styles";
+import { type createTheme, ThemeProvider } from "@mui/material/styles";
+import { AppRouterCacheProvider } from "@mui/material-nextjs/v15-appRouter";
 // biome-ignore lint/style/useImportType: React needed to render component
 import * as React from "react";
+import themeBuilder from "@/theme/themeBuilder";
 
 const GuiProvider = ({
   children,
