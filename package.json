@@ -1,6 +1,6 @@
 {
   "name": "@mavetic/mavetic-fe-gui",
-  "version": "0.0.12",
+  "version": "0.0.13",
   "packageManager": "pnpm@10.16.0",
   "main": "dist/index.js",
   "module": "dist/index.mjs",
