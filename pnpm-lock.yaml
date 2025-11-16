@@ -68,13 +68,13 @@ importers:
         version: 16.2.6
       tsup:
         specifier: ^8.5.0
-        version: 8.5.1(postcss@8.5.6)(typescript@5.9.2)(yaml@2.8.1)
+        version: 8.5.1(postcss@8.5.6)(typescript@5.9.3)(yaml@2.8.1)
       typescript:
         specifier: ^5.9.2
-        version: 5.9.2
+        version: 5.9.3
       vite-tsconfig-paths:
         specifier: ^5.1.4
-        version: 5.1.4(typescript@5.9.2)(vite@7.1.5(@types/node@24.10.1)(yaml@2.8.1))
+        version: 5.1.4(typescript@5.9.3)(vite@7.1.5(@types/node@24.10.1)(yaml@2.8.1))
       vitest:
         specifier: ^4.0.0
         version: 4.0.9(@types/node@24.10.1)(happy-dom@20.0.10)(yaml@2.8.1)
@@ -1724,6 +1724,11 @@ packages:
     engines: {node: '>=14.17'}
     hasBin: true
 
+  typescript@5.9.3:
+    resolution: {integrity: sha512-jl1vZzPDinLr9eUt3J/t7V6FgNEw9QjvBPdysz9KfQDD41fQrC2Y4vKQdiaUpFT4bXlb1RHhLpp8wtm6M5TgSw==}
+    engines: {node: '>=14.17'}
+    hasBin: true
+
   ufo@1.6.1:
     resolution: {integrity: sha512-9a4/uxlTWJ4+a5i0ooc1rU7C7YOw3wT+UGqdeNNHWnOF9qcMBgLRS+4IYUqbczewFx4mLEig6gawh7X6mFlEkA==}
 
@@ -3290,7 +3295,11 @@ snapshots:
     optionalDependencies:
       typescript: 5.9.2
 
-  tsup@8.5.1(postcss@8.5.6)(typescript@5.9.2)(yaml@2.8.1):
+  tsconfck@3.1.6(typescript@5.9.3):
+    optionalDependencies:
+      typescript: 5.9.3
+
+  tsup@8.5.1(postcss@8.5.6)(typescript@5.9.3)(yaml@2.8.1):
     dependencies:
       bundle-require: 5.1.0(esbuild@0.27.0)
       cac: 6.7.14
@@ -3311,7 +3320,7 @@ snapshots:
       tree-kill: 1.2.2
     optionalDependencies:
       postcss: 8.5.6
-      typescript: 5.9.2
+      typescript: 5.9.3
     transitivePeerDependencies:
       - jiti
       - supports-color
@@ -3319,6 +3328,8 @@ snapshots:
       - yaml
 
   typescript@5.9.2: {}
+
+  typescript@5.9.3: {}
 
   ufo@1.6.1: {}
 
@@ -3337,6 +3348,17 @@ snapshots:
       debug: 4.4.1
       globrex: 0.1.2
       tsconfck: 3.1.6(typescript@5.9.2)
+    optionalDependencies:
+      vite: 7.1.5(@types/node@24.10.1)(yaml@2.8.1)
+    transitivePeerDependencies:
+      - supports-color
+      - typescript
+
+  vite-tsconfig-paths@5.1.4(typescript@5.9.3)(vite@7.1.5(@types/node@24.10.1)(yaml@2.8.1)):
+    dependencies:
+      debug: 4.4.1
+      globrex: 0.1.2
+      tsconfck: 3.1.6(typescript@5.9.3)
     optionalDependencies:
       vite: 7.1.5(@types/node@24.10.1)(yaml@2.8.1)
     transitivePeerDependencies:
