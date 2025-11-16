@@ -13,7 +13,7 @@
   },
   "description": "FE base GUI library",
   "scripts": {
-    "build": "tsup",
+    "build": "tsdown",
     "lint": "biome check --write",
     "prepare": "husky",
     "test": "vitest run"
@@ -26,21 +26,22 @@
     "@mui/icons-material": "^7.3.2",
     "@mui/material": "^7.3.2",
     "@mui/material-nextjs": "^7.3.2",
-    "react": "^19.1.1",
-    "react-dom": "^19.1.1"
+    "react": "19.2.0",
+    "react-dom": "19.2.0"
   },
   "devDependencies": {
     "@biomejs/biome": "2.3.5",
     "@testing-library/jest-dom": "^6.8.0",
     "@testing-library/react": "^16.3.0",
     "@types/node": "^24.3.1",
-    "@types/react": "^19.1.1",
-    "@types/react-dom": "^19.1.1",
+    "@types/react": "19.2.0",
+    "@types/react-dom": "19.2.0",
     "@vitejs/plugin-react": "^5.0.0",
     "happy-dom": "^20.0.0",
     "husky": "^9.1.7",
     "lint-staged": "^16.1.6",
-    "tsup": "^8.5.0",
+    "next": "^16.0.0",
+    "tsdown": "^0.16.4",
     "typescript": "^5.9.2",
     "vite-tsconfig-paths": "^5.1.4",
     "vitest": "^4.0.0"
