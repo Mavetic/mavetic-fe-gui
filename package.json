@@ -2,6 +2,10 @@
   "name": "@mavetic/mavetic-fe-gui",
   "version": "0.0.16",
   "packageManager": "pnpm@10.22.0",
+  "license": "MIT",
+  "publishConfig": {
+    "access": "public"
+  },
   "main": "dist/index.js",
   "module": "dist/index.mjs",
   "types": "dist/index.d.ts",
@@ -51,7 +55,8 @@
       "biome check --write"
     ]
   },
-  "publishConfig": {
-    "registry": "https://npm.pkg.github.com"
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Mavetic/mavetic-fe-gui.git"
   }
 }
