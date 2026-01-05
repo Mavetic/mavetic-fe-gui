@@ -34,8 +34,8 @@ importers:
         specifier: 2.3.5
         version: 2.3.5
       '@mavetic/mavetic-fe-core':
-        specifier: 0.0.14
-        version: 0.0.14
+        specifier: 0.0.15
+        version: 0.0.15
       '@testing-library/jest-dom':
         specifier: ^6.8.0
         version: 6.9.1
@@ -621,8 +621,8 @@ packages:
   '@jridgewell/trace-mapping@0.3.31':
     resolution: {integrity: sha512-zzNR+SdQSDJzc8joaeP8QQoCQr8NuYx2dIIytl1QeBEZHJ9uW6hebsrYgbz8hJwUQao3TWCMtmfV8Nu1twOLAw==}
 
-  '@mavetic/mavetic-fe-core@0.0.14':
-    resolution: {integrity: sha512-fIWjEJ8Laec6NWRhiu1Nd5IcYGo1N7qtnEwhUhD41xNptQMUo47AVHPtcOYJIlGG9Wr8RCBhEebm2hk4x0fzww==, tarball: https://npm.pkg.github.com/download/@mavetic/mavetic-fe-core/0.0.14/3868ad3d19075f50829b896a6926673415d26083}
+  '@mavetic/mavetic-fe-core@0.0.15':
+    resolution: {integrity: sha512-BsccoCDD5AmEKsklfh5KmTh5klxVYnjhAogx28Mg97x5WlBfdEAm/6/crWVR3pe0CPLKkC8mSWKoaTWRCcCIpA==}
 
   '@mui/core-downloads-tracker@7.3.2':
     resolution: {integrity: sha512-AOyfHjyDKVPGJJFtxOlept3EYEdLoar/RvssBTWVAvDJGIE676dLi2oT/Kx+FoVXFoA/JdV7DEMq/BVWV3KHRw==}
@@ -2423,7 +2423,7 @@ snapshots:
       '@jridgewell/resolve-uri': 3.1.2
       '@jridgewell/sourcemap-codec': 1.5.5
 
-  '@mavetic/mavetic-fe-core@0.0.14': {}
+  '@mavetic/mavetic-fe-core@0.0.15': {}
 
   '@mui/core-downloads-tracker@7.3.2': {}
 
