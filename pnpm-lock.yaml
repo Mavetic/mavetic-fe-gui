@@ -56,7 +56,7 @@ importers:
         version: 5.1.2(vite@7.3.1(@types/node@24.10.9)(yaml@2.8.2))
       happy-dom:
         specifier: ^20.0.0
-        version: 20.0.10
+        version: 20.3.1
       husky:
         specifier: ^9.1.7
         version: 9.1.7
@@ -77,7 +77,7 @@ importers:
         version: 5.1.4(typescript@5.9.3)(vite@7.3.1(@types/node@24.10.9)(yaml@2.8.2))
       vitest:
         specifier: ^4.0.0
-        version: 4.0.17(@types/node@24.10.9)(happy-dom@20.0.10)(yaml@2.8.2)
+        version: 4.0.17(@types/node@24.10.9)(happy-dom@20.3.1)(yaml@2.8.2)
 
 packages:
 
@@ -1116,6 +1116,9 @@ packages:
   '@types/whatwg-mimetype@3.0.2':
     resolution: {integrity: sha512-c2AKvDT8ToxLIOUlN51gTiHXflsfIFisS4pO7pDPoKouJCESkhZnEy623gwP9laCy5lnLDAw1vAzu2vM2YLOrA==}
 
+  '@types/ws@8.18.1':
+    resolution: {integrity: sha512-ThVF6DCVhA8kUGy+aazFQ4kXQ7E1Ty7A3ypFOe0IcJV8O/M511G99AW24irKrW56Wt44yG9+ij8FaqoBGkuBXg==}
+
   '@vitejs/plugin-react@5.1.2':
     resolution: {integrity: sha512-EcA07pHJouywpzsoTUqNh5NwGayl2PPVEJKUSinGGSxFGYn+shYbqMGBg6FXDqgXum9Ou/ecb+411ssw8HImJQ==}
     engines: {node: ^20.19.0 || >=22.12.0}
@@ -1417,8 +1420,8 @@ packages:
   globrex@0.1.2:
     resolution: {integrity: sha512-uHJgbwAMwNFf5mLst7IWLNg14x1CkeqglJb/K3doi4dw6q2IvAAmM/Y81kevy83wP+Sst+nutFTYOGg3d1lsxg==}
 
-  happy-dom@20.0.10:
-    resolution: {integrity: sha512-6umCCHcjQrhP5oXhrHQQvLB0bwb1UzHAHdsXy+FjtKoYjUhmNZsQL8NivwM1vDvNEChJabVrUYxUnp/ZdYmy2g==}
+  happy-dom@20.3.1:
+    resolution: {integrity: sha512-tLvsizNno05Hij0PoB0QN/S8xf0YU2AGvO11/JlJDw5McA/gzyn0Ni1RwbTI1/zteUbOekJH0t6q8HFvjbxsGg==}
     engines: {node: '>=20.0.0'}
 
   has-flag@4.0.0:
@@ -1983,6 +1986,18 @@ packages:
   wrap-ansi@9.0.2:
     resolution: {integrity: sha512-42AtmgqjV+X1VpdOfyTGOYRi0/zsoLqtXQckTmqTeybT+BDIbM/Guxo7x3pE2vtpr1ok6xRqM9OpBe+Jyoqyww==}
     engines: {node: '>=18'}
+
+  ws@8.19.0:
+    resolution: {integrity: sha512-blAT2mjOEIi0ZzruJfIhb3nps74PRWTCz1IjglWEEpQl5XS/UNama6u2/rjFkDDouqr4L67ry+1aGIALViWjDg==}
+    engines: {node: '>=10.0.0'}
+    peerDependencies:
+      bufferutil: ^4.0.1
+      utf-8-validate: '>=5.0.2'
+    peerDependenciesMeta:
+      bufferutil:
+        optional: true
+      utf-8-validate:
+        optional: true
 
   yallist@3.1.1:
     resolution: {integrity: sha512-a4UGQaWPH59mOXUYnAG2ewncQS4i4F43Tv3JoAM+s2VDAmS9NsK8GpDMLrCHPksFT7h3K6TOoUNn2pb7RoXx4g==}
@@ -2869,6 +2884,10 @@ snapshots:
 
   '@types/whatwg-mimetype@3.0.2': {}
 
+  '@types/ws@8.18.1':
+    dependencies:
+      '@types/node': 24.10.9
+
   '@vitejs/plugin-react@5.1.2(vite@7.3.1(@types/node@24.10.9)(yaml@2.8.2))':
     dependencies:
       '@babel/core': 7.28.6
@@ -3139,11 +3158,16 @@ snapshots:
 
   globrex@0.1.2: {}
 
-  happy-dom@20.0.10:
+  happy-dom@20.3.1:
     dependencies:
       '@types/node': 20.19.30
       '@types/whatwg-mimetype': 3.0.2
+      '@types/ws': 8.18.1
       whatwg-mimetype: 3.0.0
+      ws: 8.19.0
+    transitivePeerDependencies:
+      - bufferutil
+      - utf-8-validate
 
   has-flag@4.0.0: {}
 
@@ -3636,7 +3660,7 @@ snapshots:
       fsevents: 2.3.3
       yaml: 2.8.2
 
-  vitest@4.0.17(@types/node@24.10.9)(happy-dom@20.0.10)(yaml@2.8.2):
+  vitest@4.0.17(@types/node@24.10.9)(happy-dom@20.3.1)(yaml@2.8.2):
     dependencies:
       '@vitest/expect': 4.0.17
       '@vitest/mocker': 4.0.17(vite@7.3.1(@types/node@24.10.9)(yaml@2.8.2))
@@ -3660,7 +3684,7 @@ snapshots:
       why-is-node-running: 2.3.0
     optionalDependencies:
       '@types/node': 24.10.9
-      happy-dom: 20.0.10
+      happy-dom: 20.3.1
     transitivePeerDependencies:
       - jiti
       - less
@@ -3686,6 +3710,8 @@ snapshots:
       ansi-styles: 6.2.3
       string-width: 7.2.0
       strip-ansi: 7.1.2
+
+  ws@8.19.0: {}
 
   yallist@3.1.1: {}
 
