@@ -1,7 +1,7 @@
 {
   "name": "@mavetic/mavetic-fe-gui",
   "version": "0.0.20",
-  "packageManager": "pnpm@11.1.2",
+  "packageManager": "pnpm@11.1.3",
   "license": "MIT",
   "publishConfig": {
     "access": "public"
