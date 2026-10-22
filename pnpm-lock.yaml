@@ -196,7 +196,7 @@ importers:
         version: 0.0.17
       '@testing-library/jest-dom':
         specifier: ^7.0.0
-        version: 7.0.1(@testing-library/dom@10.4.0)(vitest@5.0.5(@types/node@24.19.2)(happy-dom@20.14.6)(vite@8.2.2(@types/node@24.19.2)(esbuild@0.27.7)(yaml@2.9.1)))
+        version: 7.0.1(@testing-library/dom@10.4.0)(vitest@5.0.5(@types/node@24.19.2)(happy-dom@21.0.4)(vite@8.2.2(@types/node@24.19.2)(esbuild@0.27.7)(yaml@2.9.1)))
       '@testing-library/react':
         specifier: ^16.3.0
         version: 16.3.3(@testing-library/dom@10.4.0)(@types/react-dom@19.3.0(@types/react@19.3.0))(@types/react@19.3.0)(react-dom@19.3.1(react@19.3.1))(react@19.3.1)
@@ -213,8 +213,8 @@ importers:
         specifier: ^6.0.0
         version: 6.1.2(vite@8.2.2(@types/node@24.19.2)(esbuild@0.27.7)(yaml@2.9.1))
       happy-dom:
-        specifier: ^20.0.0
-        version: 20.14.6
+        specifier: ^21.0.0
+        version: 21.0.4
       husky:
         specifier: ^9.1.7
         version: 9.1.7
@@ -235,7 +235,7 @@ importers:
         version: 6.1.1(supports-color@7.2.0)(typescript@7.0.2)(vite@8.2.2(@types/node@24.19.2)(esbuild@0.27.7)(yaml@2.9.1))
       vitest:
         specifier: ^5.0.0
-        version: 5.0.5(@types/node@24.19.2)(happy-dom@20.14.6)(vite@8.2.2(@types/node@24.19.2)(esbuild@0.27.7)(yaml@2.9.1))
+        version: 5.0.5(@types/node@24.19.2)(happy-dom@21.0.4)(vite@8.2.2(@types/node@24.19.2)(esbuild@0.27.7)(yaml@2.9.1))
 
 packages:
 
@@ -1540,8 +1540,8 @@ packages:
   globrex@0.1.2:
     resolution: {integrity: sha512-uHJgbwAMwNFf5mLst7IWLNg14x1CkeqglJb/K3doi4dw6q2IvAAmM/Y81kevy83wP+Sst+nutFTYOGg3d1lsxg==}
 
-  happy-dom@20.14.6:
-    resolution: {integrity: sha512-5DDsf4QmEIlRL6NkCv/fxSjYHHkZceL/IaYQdJc2h3G7DRTEai++VTjbfL0LB9geW2VrA3+vrjF3Efx+OTtX0Q==}
+  happy-dom@21.0.4:
+    resolution: {integrity: sha512-tFm+GaLBgo6o0awHnvHaNoraVo27qJ+2tZEtZ+cIa08hXbeitrxAJajLI05hsUy/2/YTKcUjQYzHe5mCcraLBw==}
     engines: {node: '>=20.0.0'}
 
   has-flag@4.0.0:
@@ -2799,7 +2799,7 @@ snapshots:
       lz-string: 1.5.0
       pretty-format: 27.5.1
 
-  '@testing-library/jest-dom@7.0.1(@testing-library/dom@10.4.0)(vitest@5.0.5(@types/node@24.19.2)(happy-dom@20.14.6)(vite@8.2.2(@types/node@24.19.2)(esbuild@0.27.7)(yaml@2.9.1)))':
+  '@testing-library/jest-dom@7.0.1(@testing-library/dom@10.4.0)(vitest@5.0.5(@types/node@24.19.2)(happy-dom@21.0.4)(vite@8.2.2(@types/node@24.19.2)(esbuild@0.27.7)(yaml@2.9.1)))':
     dependencies:
       '@adobe/css-tools': 4.4.4
       '@testing-library/dom': 10.4.0
@@ -2809,7 +2809,7 @@ snapshots:
       picocolors: 1.1.1
       redent: 3.0.0
     optionalDependencies:
-      vitest: 5.0.5(@types/node@24.19.2)(happy-dom@20.14.6)(vite@8.2.2(@types/node@24.19.2)(esbuild@0.27.7)(yaml@2.9.1))
+      vitest: 5.0.5(@types/node@24.19.2)(happy-dom@21.0.4)(vite@8.2.2(@types/node@24.19.2)(esbuild@0.27.7)(yaml@2.9.1))
 
   '@testing-library/react@16.3.3(@testing-library/dom@10.4.0)(@types/react-dom@19.3.0(@types/react@19.3.0))(@types/react@19.3.0)(react-dom@19.3.1(react@19.3.1))(react@19.3.1)':
     dependencies:
@@ -3146,7 +3146,7 @@ snapshots:
 
   globrex@0.1.2: {}
 
-  happy-dom@20.14.6:
+  happy-dom@21.0.4:
     dependencies:
       '@types/node': 24.19.2
       '@types/whatwg-mimetype': 3.0.2
@@ -3600,7 +3600,7 @@ snapshots:
       fsevents: 2.3.3
       yaml: 2.9.1
 
-  vitest@5.0.5(@types/node@24.19.2)(happy-dom@20.14.6)(vite@8.2.2(@types/node@24.19.2)(esbuild@0.27.7)(yaml@2.9.1)):
+  vitest@5.0.5(@types/node@24.19.2)(happy-dom@21.0.4)(vite@8.2.2(@types/node@24.19.2)(esbuild@0.27.7)(yaml@2.9.1)):
     dependencies:
       '@types/chai': 5.2.3
       '@vitest/mocker': 5.0.5(vite@8.2.2(@types/node@24.19.2)(esbuild@0.27.7)(yaml@2.9.1))
@@ -3618,7 +3618,7 @@ snapshots:
       why-is-node-running: 3.2.1
     optionalDependencies:
       '@types/node': 24.19.2
-      happy-dom: 20.14.6
+      happy-dom: 21.0.4
     transitivePeerDependencies:
       - msw
 
